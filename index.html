@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating Component</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <!-- Rating state -->
+        <div class="card rating-state" id="ratingCard">
+            <div class="star-icon">★</div>
+            <h1>How did we do?</h1>
+            <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            <div class="rating-buttons">
+                <button class="rating-btn" data-rating="1">1</button>
+                <button class="rating-btn" data-rating="2">2</button>
+                <button class="rating-btn" data-rating="3">3</button>
+                <button class="rating-btn" data-rating="4">4</button>
+                <button class="rating-btn" data-rating="5">5</button>
+            </div>
+            <button class="submit-btn" id="submitBtn">SUBMIT</button>
+        </div>
+
+        <!-- Thank you state -->
+        <div class="card thank-you-state hidden" id="thankYouCard">
+            <p class="selection-message">You selected <span id="selectedRating">5</span> out of 5</p>
+            <h2>Thank you!</h2>
+            <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

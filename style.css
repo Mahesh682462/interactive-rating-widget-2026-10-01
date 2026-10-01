@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif; background-color: #131518; color: #fff;
+    display: flex; justify-content: center; align-items: center;
+    min-height: 100vh; margin: 0;
+}
+
+.card {
+    background-color: #1d2128; padding: 2rem; border-radius: 1.5rem;
+    max-width: 400px; text-align: center;
+}
+
+.star-icon {
+    background-color: #272e38; color: #fc7614;
+    width: 3rem; height: 3rem; border-radius: 50%;
+    display: flex; justify-content: center; align-items: center;
+    font-size: 1.5rem; margin: 0 auto 1.5rem auto;
+}
+
+h1, .thank-you-state h2 {
+    font-size: 1.8rem; margin-bottom: 0.8rem;
+}
+
+p {
+    color: #969fad; line-height: 1.5; font-size: 0.9rem; margin-bottom: 1.5rem;
+}
+
+.rating-buttons {
+    display: flex; justify-content: space-between; margin-bottom: 1.5rem;
+}
+
+.rating-btn {
+    background-color: #272e38; color: #969fad; border: none;
+    width: 3rem; height: 3rem; border-radius: 50%;
+    font-weight: bold; cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.rating-btn:hover { background-color: #fc7614; color: #fff; }
+.rating-btn.selected { background-color: #7c8898; color: #fff; }
+
+.submit-btn {
+    background-color: #fc7614; color: #fff; border: none;
+    padding: 0.8rem 0; width: 100%; border-radius: 2rem;
+    text-transform: uppercase; font-weight: bold; letter-spacing: 0.1rem;
+    cursor: pointer; transition: background-color 0.3s;
+}
+
+.submit-btn:hover { background-color: #fff; color: #fc7614; }
+
+.thank-you-state .selection-message {
+    background-color: #272e38; color: #fc7614;
+    padding: 0.5rem 1rem; border-radius: 1.5rem;
+    display: inline-block; font-size: 0.9rem; margin-bottom: 1.5rem;
+}
+
+.hidden { display: none; }
